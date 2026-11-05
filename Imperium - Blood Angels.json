@@ -6723,6 +6723,14 @@
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
+          },
+          {
+            "name": "Sanguinary Priest",
+            "id": "4815-cc18-7201-adbe",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability", "typeId": "9b8f-694b-e5e-b573"}]
           }
         ],
         "selectionEntryGroups": [
@@ -6940,7 +6948,7 @@
         ]
       },
       {
-        "name": "Sanguinary Priest with Jump Pack [Legends]",
+        "name": "Sanguinary Priest with Jump Pack",
         "id": "fa13-ba8a-8711-87b6",
         "hidden": false,
         "import": true,
@@ -7201,13 +7209,13 @@
             "typeName": "Unit",
             "characteristics": [
               {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
-              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "T", "$text": "5", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
               {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
               {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
               {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
               {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
-              {"name": "Base", "$text": "~40mm", "typeId": "nr-base-size"}
+              {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
             ]
           },
           {
@@ -7217,20 +7225,6 @@
             "typeId": "9cc3-6d83-4dd3-9b64",
             "typeName": "Abilities",
             "characteristics": [{"name": "Description", "$text": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability", "typeId": "9b8f-694b-e5e-b573"}]
-          },
-          {
-            "name": "Blood Chalice",
-            "id": "4652-4462-711c-484c",
-            "hidden": false,
-            "typeId": "9cc3-6d83-4dd3-9b64",
-            "typeName": "Abilities",
-            "characteristics": [
-              {
-                "name": "Description",
-                "$text": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
-                "typeId": "9b8f-694b-e5e-b573"
-              }
-            ]
           },
           {
             "name": "Support",
@@ -7245,6 +7239,22 @@
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
+          },
+          {
+            "name": "Blood Chalice",
+            "id": "d7d4-9039-3758-23e5",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This unit has +1 T.", "typeId": "9b8f-694b-e5e-b573"}]
+          },
+          {
+            "name": "Narthecium",
+            "id": "de00-bc44-8713-1aa8",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "(Once per turn, per unit) In your Command phase, this unit heals D3+1 wounds.", "typeId": "9b8f-694b-e5e-b573"}]
           }
         ],
         "selectionEntryGroups": [

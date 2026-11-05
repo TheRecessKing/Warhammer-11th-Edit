@@ -2,7 +2,7 @@
   "catalogue": {
     "name": "Imperium - Adeptus Astartes - Space Marines",
     "id": "e0af-67df-9d63-8fb7",
-    "authorName": "Acebaur",
+    "authorName": "TheRecessKing",
     "battleScribeVersion": 2.03,
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
@@ -3096,6 +3096,20 @@
           {
             "name": "Description",
             "$text": "In your Shooting phase, when this unit has shot, select one enemy unit hit by those attacks. Attacks that target that unit made by friendly ^^**Adeptus Astartes**^^ units that **disembarked** from this ^^**Transport**^^ this turn can re-roll **wound** rolls.",
+            "typeId": "9b8f-694b-e5e-b573"
+          }
+        ]
+      },
+      {
+        "name": "[Psychic Abilities] - Force Dome (Psychic Level 1)",
+        "id": "fd06-2c57-293a-c9c8",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "In your Movement phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit has 4+ InSv until the start of your next turn.",
             "typeId": "9b8f-694b-e5e-b573"
           }
         ]
@@ -46279,7 +46293,7 @@
         ]
       },
       {
-        "name": "Librarian with Jump Pack [Legends]",
+        "name": "Librarian with Jump Pack",
         "id": "45af-a02e-e8e2-49f",
         "hidden": true,
         "import": true,
@@ -46377,7 +46391,18 @@
           {"id": "f246-62c4-976d-567a", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "min", "value": 0},
           {"id": "de1a-9304-5d7a-f7bc", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}
         ],
-        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 75}],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 95},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+          {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+        ],
         "entryLinks": [
           {
             "name": "Warlord",
@@ -46424,7 +46449,9 @@
         "infoLinks": [
           {"name": "Leader", "id": "43cf-2fc3-6ee6-38ca", "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
           {"name": "Psychic Hood", "id": "ad6f-6910-c38f-bf67", "hidden": false, "targetId": "116b-b23c-4ea4-30ed", "type": "profile"},
-          {"name": "Combat Doctrines", "id": "493f-6fcf-a4c8-ac78", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
+          {"name": "Combat Doctrines", "id": "493f-6fcf-a4c8-ac78", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
+          {"name": "Librarian (Psyker Level 1)", "id": "df85-0b20-90d2-44fd", "hidden": false, "targetId": "8550-a6b5-b724-963c", "type": "profile"},
+          {"name": "Librarius", "id": "6bbe-7a15-085a-d7d7", "hidden": false, "targetId": "7264-1bb3-6181-3e3e", "type": "rule"}
         ],
         "modifierGroups": [
           {
@@ -46590,24 +46617,24 @@
         ],
         "profiles": [
           {
-            "name": "Librarian",
+            "name": "Librarian with Jump Pack",
             "id": "d231-84db-2c2b-1452",
             "hidden": false,
             "typeId": "c547-1836-d8a-ff4f",
             "typeName": "Unit",
             "characteristics": [
               {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
-              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "T", "$text": "5", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
               {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
               {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
               {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
               {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
-              {"name": "Base", "$text": "~40mm", "typeId": "nr-base-size"}
+              {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
             ]
           },
           {
-            "name": "Might of Heroes [Pyschic]",
+            "name": "[Psychic Abilities] - Might of Heroes (Psychic Level 1)",
             "id": "fb71-30d2-69a7-6697",
             "hidden": false,
             "typeId": "9cc3-6d83-4dd3-9b64",
@@ -46615,7 +46642,7 @@
             "characteristics": [
               {
                 "name": "Description",
-                "$text": "While this model is leading a unit, improve the Strength and Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
+                "$text": "In your Fight phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ Improve the Strength and Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
@@ -46630,6 +46657,20 @@
               {
                 "name": "Description",
                 "$text": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "[Psychic Abilities] - Force Dome (Psychic Level 1)",
+            "id": "1be7-c83d-deff-135f",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "In your Movement phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit has 4+ InSv until the start of your next turn.",
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
@@ -70740,12 +70781,14 @@
           {"id": "b59d-f0f7-76ce-24be", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}
         ],
         "costs": [
-          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 70},
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 80},
           {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
           {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
           {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
           {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
           {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
           {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
           {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
         ],
@@ -70822,7 +70865,9 @@
         "infoLinks": [
           {"name": "Leader", "id": "c9ff-976f-d0a3-2fd7", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
           {"name": "Combat Doctrines", "id": "cfbb-a85e-e61f-968b", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
-          {"name": "Crucible", "id": "bd0a-37d7-2669-818d", "hidden": false, "targetId": "5ce6-a3cf-e871-f081", "type": "rule"}
+          {"name": "Crucible", "id": "bd0a-37d7-2669-818d", "hidden": false, "targetId": "5ce6-a3cf-e871-f081", "type": "rule"},
+          {"name": "Librarian (Psyker Level 1)", "id": "8736-bfb5-90fd-ca08", "hidden": false, "targetId": "8550-a6b5-b724-963c", "type": "profile"},
+          {"name": "Librarius", "id": "8190-63b6-7bfa-de85", "hidden": false, "targetId": "7264-1bb3-6181-3e3e", "type": "rule"}
         ],
         "modifierGroups": [
           {
@@ -71025,22 +71070,14 @@
             "typeName": "Unit",
             "characteristics": [
               {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
-              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "T", "$text": "5", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
-              {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
               {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
               {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
               {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
               {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
             ]
-          },
-          {
-            "name": "Veil of Time (Psychic)",
-            "id": "d60e-18e8-35b8-4464",
-            "hidden": false,
-            "typeId": "9cc3-6d83-4dd3-9b64",
-            "typeName": "Abilities",
-            "characteristics": [{"name": "Description", "$text": "Weapons equipped by models in this unit have the [Sustained Hits 1] ability", "typeId": "9b8f-694b-e5e-b573"}]
           },
           {
             "name": "Leader",
@@ -71122,6 +71159,34 @@
                 "type": "append",
                 "value": "- **^^Blood Claws^^**\n- **^^Grey Hunters^^**\n- **^^Wolf Guard Headtakers^^**",
                 "conditions": [{"childId": "75ef-90ae-250e-dd29", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {
+            "name": "[Psychic Abilities] - Force Dome (Psychic Level 1)",
+            "id": "c886-6480-77d9-ad59",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "In your Movement phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit has 4+ InSv until the start of your next turn.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "[Psychic Abilities] - Soul Sight (Psychic Level 1)",
+            "id": "b085-2520-eae2-3fb0",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "In your Shooting phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ Select one visible enemy unit. Ranged attacks that target that enemy unit have [IGNORES COVER].",
+                "typeId": "9b8f-694b-e5e-b573"
               }
             ]
           }
@@ -72967,7 +73032,7 @@
         ]
       },
       {
-        "name": "Judiciar Xacharus [Legends]",
+        "name": "Judiciar Xacharus",
         "id": "be42-655d-472b-d89e",
         "hidden": false,
         "import": true,
@@ -73088,9 +73153,9 @@
           }
         ],
         "infoLinks": [
-          {"name": "Leader", "id": "4883-d68a-b802-c1a9", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
           {"name": "Combat Doctrines", "id": "a48d-19ea-5299-7049", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
-          {"name": "Templar Vows", "id": "7701-9eb4-c195-ec5b", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"}
+          {"name": "Templar Vows", "id": "7701-9eb4-c195-ec5b", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"},
+          {"name": "Support", "id": "7fa7-4385-dcab-ac84", "hidden": false, "targetId": "3342-2180-9c5d-925f", "type": "rule"}
         ],
         "modifierGroups": [
           {
@@ -73264,13 +73329,13 @@
             "typeName": "Unit",
             "characteristics": [
               {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
-              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "T", "$text": "5", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
               {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
-              {"name": "LD", "$text": "5+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
               {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
               {"name": "InSv", "$text": "4+", "typeId": "55a7-5b54-c60d-11dc"},
-              {"name": "Base", "$text": "~40mm", "typeId": "nr-base-size"}
+              {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
             ]
           },
           {
@@ -73296,15 +73361,15 @@
             ]
           },
           {
-            "name": "Leader",
-            "id": "c3ff-d41f-d017-3a5c",
+            "name": "Support",
+            "id": "35f4-5388-3172-764a",
             "hidden": false,
             "typeId": "9cc3-6d83-4dd3-9b64",
             "typeName": "Abilities",
             "characteristics": [
               {
                 "name": "Description",
-                "$text": "This model can be attached to the following units:\n\n■ ASSAULT INTERCESSOR SQUAD\n■ BLADEGUARD VETERAN SQUAD\n■ CRUSADER SQUAD\n■ DEATHWATCH VETERANS\n■ DECIMUS KILL TEAM\n■ FORTIS KILL TEAM\n■ INFERNUS SQUAD\n■ INNER CIRCLE COMPANIONS\n■ INTERCESSOR SQUAD\n■ STERNGUARD VETERAN SQUAD\n■ SWORD BRETHREN SQUAD\n■ TACTICAL SQUAD",
+                "$text": "This model can be attached to the following units: \nASSAULT INTERCESSOR SQUAD, BLADEGUARD VETERAN SQUAD, CRUSADER SQUAD, DEATHWATCH VETERANS, DECIMUS KILL TEAM, FORTIS KILL TEAM, INFERNUS SQUAD, INNER CIRCLE COMPANIONS, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, SWORD BRETHREN SQUAD, VANGUARD VETERAN SQUAD",
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
