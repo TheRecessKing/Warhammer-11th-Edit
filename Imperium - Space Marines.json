@@ -3321,7 +3321,7 @@
       },
       {
         "name": "Judiciar Xacharus",
-        "id": "be42-655d-472b-d89e",
+        "id": "8af4-60e0-f5d9-e7a8",
         "hidden": false,
         "import": true,
         "type": "model",
@@ -3338,6 +3338,7 @@
             "max": 1,
             "min": 0,
             "scope": "force",
+            "sortIndex": 4,
             "conditionGroups": [
               {
                 "type": "or",
@@ -3464,15 +3465,25 @@
           {"name": "Tacticus", "id": "092c-f63b-cd2e-f67c", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Judiciar", "id": "aea2-4556-0293-6be6", "hidden": false, "primary": false, "targetId": "258c-ef74-d5f1-3a61"},
           {"name": "Faction: Adeptus Astartes", "id": "7bf1-2d93-b6a8-b054", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Leader", "id": "f298-525e-aa85-631d", "hidden": false, "primary": false, "targetId": "1556-9b56-fba6-4370"},
           {"name": "Epic Hero", "id": "a339-d14a-a46e-87ce", "hidden": false, "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
-          {"name": "Xacharus", "id": "245f-0eca-f0f1-ca50", "hidden": false, "primary": false, "targetId": "d9f6-b1ef-a56d-3c2a"}
+          {"name": "Support", "id": "fb94-69ea-5f29-10cb", "hidden": false, "primary": false, "targetId": "7dcd-7f61-69a7-0294"}
         ],
         "constraints": [
           {"id": "32c5-9184-4be4-ff46", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
           {"id": "8724-5386-4686-b7b1", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "max", "value": 0},
           {"id": "07f3-05e4-6237-623c", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "min", "value": 0},
-          {"id": "3db2-afb5-c2a1-abf9", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}
+          {"id": "3db2-afb5-c2a1-abf9", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3},
+          {"id": "c3a3-680e-88c7-7393", "field": "associations", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "1ecb-81ec-4f1c-0dac",
+            "field": "associations",
+            "includeChildSelections": false,
+            "message": "{this} must be attached to a Bodyguard unit.",
+            "scope": "self",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 75},
@@ -3523,7 +3534,8 @@
         "infoLinks": [
           {"name": "Combat Doctrines", "id": "a48d-19ea-5299-7049", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
           {"name": "Templar Vows", "id": "7701-9eb4-c195-ec5b", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"},
-          {"name": "Support", "id": "ec3d-8a3b-592c-9cdb", "hidden": false, "targetId": "3342-2180-9c5d-925f", "type": "rule"}
+          {"name": "Fights First", "id": "41ed-57cc-5473-23c7", "hidden": false, "targetId": "24-c886-e8ba-5a89", "type": "rule"},
+          {"name": "Support", "id": "bb49-9806-73f3-a867", "hidden": false, "targetId": "3342-2180-9c5d-925f", "type": "rule"}
         ],
         "modifierGroups": [
           {
@@ -3743,8 +3755,16 @@
             ]
           },
           {
+            "name": "*Invulnerable Save",
+            "id": "d8cc-e3ae-2704-2b29",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "Against melee attacks only", "typeId": "9b8f-694b-e5e-b573"}]
+          },
+          {
             "name": "Support",
-            "id": "21a3-14eb-a5fe-c584",
+            "id": "851b-b3be-e0a1-46fd",
             "hidden": false,
             "typeId": "9cc3-6d83-4dd3-9b64",
             "typeName": "Abilities",
@@ -3755,14 +3775,6 @@
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
-          },
-          {
-            "name": "*Invulnerable Save",
-            "id": "d8cc-e3ae-2704-2b29",
-            "hidden": false,
-            "typeId": "9cc3-6d83-4dd3-9b64",
-            "typeName": "Abilities",
-            "characteristics": [{"name": "Description", "$text": "Against melee attacks only", "typeId": "9b8f-694b-e5e-b573"}]
           }
         ],
         "selectionEntryGroups": [
@@ -3770,7 +3782,7 @@
             "name": "Wargear",
             "id": "7eab-7883-457e-f901",
             "hidden": false,
-            "sortIndex": 4,
+            "sortIndex": 3,
             "entryLinks": [
               {
                 "name": "Absolvor bolt pistol",
@@ -54284,7 +54296,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "conditions": [{"childId": "any", "field": "selections", "includeChildSelections": false, "scope": "self", "shared": true, "type": "notInstanceOf", "value": 1}]
           }
         ],
         "categoryLinks": [
