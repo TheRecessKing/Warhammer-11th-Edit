@@ -2785,6 +2785,489 @@
       },
       {"name": "Index - Deathwatch", "id": "4115-3627-e608-39f6", "hidden": false}
     ],
+    "selectionEntries": [
+      {
+        "name": "Librarian with Jump Pack",
+        "id": "45af-a02e-e8e2-49f",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "6e08-614e-1991-b68b",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Led by",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "19ab-c0ae-7b00-dc0c", "childName": "Wulfen", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+                          {
+                            "childId": "5e41-161b-7d74-8c8e",
+                            "childName": "Wulfen with Storm Shields",
+                            "field": "selections",
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "7dab-7280-6618-a658",
+                        "childName": "Wolf-Touched",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "queryFromSelf": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "21e8-92f1-9d9a-8c49",
+                    "childName": "Assault Squad with Jump Packs",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 1,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "17c0-599-955a-bdab",
+                    "childName": "Vanguard Veteran Squad with Jump Packs",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 2,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {"name": "Character", "id": "f91f-791c-16c7-2165", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Infantry", "id": "bb28-a0-1856-28b2", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Imperium", "id": "921a-8081-5a21-6a06", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Librarian", "id": "9cea-43e6-3c61-14fd", "hidden": false, "primary": false, "targetId": "2c02-e616-7038-bcd7"},
+          {"name": "Psyker", "id": "6f07-98e3-65a2-4d60", "hidden": false, "primary": false, "targetId": "13bf-2bee-3ae0-b414"},
+          {"name": "Faction: Adeptus Astartes", "id": "9015-87f1-9d61-4073", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
+          {"name": "Fly", "id": "2d6c-e763-8873-e948", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"},
+          {"name": "Jump Pack", "id": "691a-7989-a342-8e14", "hidden": false, "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
+          {"name": "Leader", "id": "1f4e-07cb-e7be-2213", "hidden": false, "primary": false, "targetId": "1556-9b56-fba6-4370"},
+          {"name": "Tacticus", "id": "0bb6-d11b-f4d3-6cc0", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"}
+        ],
+        "constraints": [
+          {"id": "3f13-c7a2-d414-c5ee", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
+          {"id": "4017-d0a0-b5aa-b297", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "max", "value": 0},
+          {"id": "f246-62c4-976d-567a", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "min", "value": 0},
+          {"id": "de1a-9304-5d7a-f7bc", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}
+        ],
+        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 75}],
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "e2f4-853e-5fc2-d6e2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "caa-f869-3cbd-b48e",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "b6c8-23f1-36e8-e28d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Enhancements",
+            "id": "19f5-8f0a-4ca1-3d59",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "9e5d-de4c-c5d1-1d3e",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Crusade",
+            "id": "d1d6-5b64-f2b3-93e3",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "9a99-f13c-a667-e698",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Leader", "id": "43cf-2fc3-6ee6-38ca", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
+          {"name": "Psychic Hood", "id": "ad6f-6910-c38f-bf67", "hidden": false, "targetId": "116b-b23c-4ea4-30ed", "type": "profile"},
+          {"name": "Combat Doctrines", "id": "493f-6fcf-a4c8-ac78", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Crusade modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "4017-d0a0-b5aa-b297",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "f246-62c4-976d-567a",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-ready)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 5},
+                      {
+                        "childId": "cac3-71d1-ea4b-795d",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Blooded)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 5},
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 15}
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-hardened)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 15},
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 30}
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Heroic)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 30},
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 50}
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Legendary)",
+                "conditions": [{"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 50}]
+              },
+              {
+                "field": "3f13-c7a2-d414-c5ee",
+                "type": "increment",
+                "value": 1,
+                "conditions": [{"childId": "8dbe-9f09-d44d-07d6", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "id": "49e4-95df-6fe5-72e1",
+                "childId": "9ed-cbf4-bfe5-90bf",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [{"childId": "36d3-36bc-68dd-40ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "field": "de1a-9304-5d7a-f7bc",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "d62d-db22-4893-4bc0",
+                "childName": "1. Incursion (1000 Point limit)",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Librarian",
+            "id": "d231-84db-2c2b-1452",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+              {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+              {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
+              {"name": "Base", "$text": "~40mm", "typeId": "nr-base-size"}
+            ]
+          },
+          {
+            "name": "Might of Heroes [Pyschic]",
+            "id": "fb71-30d2-69a7-6697",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "While this model is leading a unit, improve the Strength and Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "667f-b83f-474c-3faf",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "d385-d865-325c-2795",
+            "hidden": false,
+            "sortIndex": 4,
+            "entryLinks": [
+              {
+                "name": "Force weapon",
+                "id": "a16c-9a4-6d86-7cd3",
+                "hidden": false,
+                "import": true,
+                "targetId": "905d-bd38-f44c-9eef",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "0253-943b-e357-6c1d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "afce-98e5-65b7-3df4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [{"name": "Weapon Upgrades", "id": "5d65-13be-a20c-11e1", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+              },
+              {
+                "name": "Smite",
+                "id": "f765-b066-a29a-b450",
+                "hidden": false,
+                "import": true,
+                "targetId": "4aaa-f353-5fa5-fd92",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "4254-91be-538f-0370", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "8949-2cb5-a415-51ff", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [{"name": "Weapon Upgrades", "id": "fc57-44fd-bdfa-cf65", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Weapon",
+                "id": "1bd0-9497-8d49-551",
+                "defaultSelectionEntryId": "28c2-c07f-ed3a-e98e",
+                "hidden": false,
+                "constraints": [
+                  {"id": "9ee2-8d00-3291-fafb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "1639-fd72-dfaa-a26e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Combi-weapon",
+                    "id": "7d2c-e297-458a-d183",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2c13-8cdd-f66b-bcae",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "6bcd-b8a4-5374-0852", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  },
+                  {
+                    "name": "Boltgun",
+                    "id": "8507-d65a-ad3-a9f2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "beac-9df8-7247-c8ab",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "9f91-4bb5-caa4-0068", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  },
+                  {
+                    "name": "Storm bolter",
+                    "id": "b237-a317-4658-c062",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "eb61-5cd0-5242-74cc",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "40c3-3822-3eb6-0064", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  },
+                  {
+                    "name": "Grav-pistol",
+                    "id": "bb84-cd8a-b25b-9124",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "1f74-a1b-2835-ccdd",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "4a80-d32b-7d26-95f7", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  },
+                  {
+                    "name": "Hand flamer",
+                    "id": "6685-ac18-c7b7-795",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "9dc6-6ad8-818e-db2e",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "0a59-8eb1-17a5-2a64", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  },
+                  {
+                    "name": "Inferno Pistol",
+                    "id": "428d-4a41-9435-8b1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d8bf-e17f-d6fa-b7e8",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "fb1d-c511-8bf5-81da", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  },
+                  {
+                    "name": "Bolt pistol",
+                    "id": "28c2-c07f-ed3a-e98e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "18b0-8c2-173f-5",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "25f5-8f4d-6c8b-2cbd", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  },
+                  {
+                    "name": "Plasma pistol",
+                    "id": "ed97-8de4-b44b-614a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "25c2-104f-fa0c-809e",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Weapon Upgrades", "id": "a66a-711d-552f-7c96", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "sharedProfiles": [
       {
         "name": "Strategic Acumen",
@@ -46272,486 +46755,6 @@
                 "entryLinks": [
                   {"name": "Weapon Upgrades", "id": "9259-03d0-9618-447b", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"},
                   {"name": "Weapon Upgrades", "id": "cd11-3f8d-de22-a0ce", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Librarian with Jump Pack",
-        "id": "45af-a02e-e8e2-49f",
-        "hidden": false,
-        "import": true,
-        "type": "model",
-        "associations": [
-          {
-            "name": "Leading",
-            "id": "6e08-614e-1991-b68b",
-            "action": "group",
-            "childId": "unit",
-            "childName": "unit",
-            "includeChildSelections": true,
-            "label": "Led by",
-            "max": 1,
-            "min": 0,
-            "scope": "force",
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {"childId": "19ab-c0ae-7b00-dc0c", "childName": "Wulfen", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
-                          {
-                            "childId": "5e41-161b-7d74-8c8e",
-                            "childName": "Wulfen with Storm Shields",
-                            "field": "selections",
-                            "scope": "self",
-                            "shared": true,
-                            "type": "instanceOf",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "childId": "7dab-7280-6618-a658",
-                        "childName": "Wolf-Touched",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "queryFromSelf": true,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "conditions": [
-                  {
-                    "childId": "21e8-92f1-9d9a-8c49",
-                    "childName": "Assault Squad with Jump Packs",
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "sortIndex": 1,
-                    "type": "instanceOf",
-                    "value": 1
-                  },
-                  {
-                    "childId": "17c0-599-955a-bdab",
-                    "childName": "Vanguard Veteran Squad with Jump Packs",
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "sortIndex": 2,
-                    "type": "instanceOf",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "categoryLinks": [
-          {"name": "Character", "id": "f91f-791c-16c7-2165", "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
-          {"name": "Infantry", "id": "bb28-a0-1856-28b2", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
-          {"name": "Grenades", "id": "b550-cfe9-3b86-2caa", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
-          {"name": "Imperium", "id": "921a-8081-5a21-6a06", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
-          {"name": "Librarian", "id": "9cea-43e6-3c61-14fd", "primary": false, "targetId": "2c02-e616-7038-bcd7"},
-          {"name": "Psyker", "id": "6f07-98e3-65a2-4d60", "primary": false, "targetId": "13bf-2bee-3ae0-b414"},
-          {"name": "Faction: Adeptus Astartes", "id": "9015-87f1-9d61-4073", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Fly", "id": "2d6c-e763-8873-e948", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
-          {"name": "Jump Pack", "id": "691a-7989-a342-8e14", "primary": false, "targetId": "dda2-bb0a-215e-ad9c"}
-        ],
-        "constraints": [
-          {"id": "3f13-c7a2-d414-c5ee", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
-          {"id": "4017-d0a0-b5aa-b297", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "max", "value": 0},
-          {"id": "f246-62c4-976d-567a", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "min", "value": 0},
-          {"id": "de1a-9304-5d7a-f7bc", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}
-        ],
-        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 75}],
-        "entryLinks": [
-          {
-            "name": "Warlord",
-            "id": "e2f4-853e-5fc2-d6e2",
-            "collective": false,
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "caa-f869-3cbd-b48e",
-            "type": "selectionEntry",
-            "constraints": [
-              {
-                "id": "ad60-fb6-5cf4-f118",
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "percentValue": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "name": "Enhancements",
-            "id": "19f5-8f0a-4ca1-3d59",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "9e5d-de4c-c5d1-1d3e",
-            "type": "selectionEntryGroup"
-          },
-          {
-            "name": "Crusade",
-            "id": "d1d6-5b64-f2b3-93e3",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "9a99-f13c-a667-e698",
-            "type": "selectionEntryGroup"
-          }
-        ],
-        "infoLinks": [
-          {"name": "Leader", "id": "43cf-2fc3-6ee6-38ca", "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
-          {"name": "Psychic Hood", "id": "ad6f-6910-c38f-bf67", "hidden": false, "targetId": "116b-b23c-4ea4-30ed", "type": "profile"},
-          {"name": "Combat Doctrines", "id": "493f-6fcf-a4c8-ac78", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
-        ],
-        "modifierGroups": [
-          {
-            "comment": "Crusade modifiers",
-            "type": "and",
-            "modifiers": [
-              {
-                "field": "4017-d0a0-b5aa-b297",
-                "type": "increment",
-                "value": 2,
-                "repeats": [
-                  {
-                    "childId": "d1a5-4297-168b-11cd",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "repeats": 1,
-                    "roundUp": false,
-                    "scope": "self",
-                    "shared": true,
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "field": "f246-62c4-976d-567a",
-                "type": "increment",
-                "value": 2,
-                "repeats": [
-                  {
-                    "childId": "d1a5-4297-168b-11cd",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "repeats": 1,
-                    "roundUp": false,
-                    "scope": "self",
-                    "shared": true,
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "field": "name",
-                "type": "append",
-                "value": "(Battle-ready)",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 5},
-                      {
-                        "childId": "cac3-71d1-ea4b-795d",
-                        "field": "forces",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "field": "name",
-                "type": "append",
-                "value": "(Blooded)",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 5},
-                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 15}
-                    ]
-                  }
-                ]
-              },
-              {
-                "field": "name",
-                "type": "append",
-                "value": "(Battle-hardened)",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 15},
-                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 30}
-                    ]
-                  }
-                ]
-              },
-              {
-                "field": "name",
-                "type": "append",
-                "value": "(Heroic)",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 30},
-                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 50}
-                    ]
-                  }
-                ]
-              },
-              {
-                "field": "name",
-                "type": "append",
-                "value": "(Legendary)",
-                "conditions": [{"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 50}]
-              },
-              {
-                "field": "3f13-c7a2-d414-c5ee",
-                "type": "increment",
-                "value": 1,
-                "conditions": [{"childId": "8dbe-9f09-d44d-07d6", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atLeast", "value": 1}]
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "id": "49e4-95df-6fe5-72e1",
-                "childId": "9ed-cbf4-bfe5-90bf",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "36d3-36bc-68dd-40ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "de1a-9304-5d7a-f7bc",
-            "type": "set",
-            "value": 2,
-            "conditions": [
-              {
-                "childId": "d62d-db22-4893-4bc0",
-                "childName": "1. Incursion (1000 Point limit)",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Librarian",
-            "id": "d231-84db-2c2b-1452",
-            "hidden": false,
-            "typeId": "c547-1836-d8a-ff4f",
-            "typeName": "Unit",
-            "characteristics": [
-              {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
-              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
-              {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
-              {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
-              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
-              {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
-              {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
-              {"name": "Base", "$text": "~40mm", "typeId": "nr-base-size"}
-            ]
-          },
-          {
-            "name": "Might of Heroes [Pyschic]",
-            "id": "fb71-30d2-69a7-6697",
-            "hidden": false,
-            "typeId": "9cc3-6d83-4dd3-9b64",
-            "typeName": "Abilities",
-            "characteristics": [
-              {
-                "name": "Description",
-                "$text": "While this model is leading a unit, improve the Strength and Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
-                "typeId": "9b8f-694b-e5e-b573"
-              }
-            ]
-          },
-          {
-            "name": "Leader",
-            "id": "667f-b83f-474c-3faf",
-            "hidden": false,
-            "typeId": "9cc3-6d83-4dd3-9b64",
-            "typeName": "Abilities",
-            "characteristics": [
-              {
-                "name": "Description",
-                "$text": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs",
-                "typeId": "9b8f-694b-e5e-b573"
-              }
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Wargear",
-            "id": "d385-d865-325c-2795",
-            "hidden": false,
-            "sortIndex": 4,
-            "entryLinks": [
-              {
-                "name": "Force weapon",
-                "id": "a16c-9a4-6d86-7cd3",
-                "hidden": false,
-                "import": true,
-                "targetId": "905d-bd38-f44c-9eef",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "0253-943b-e357-6c1d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "afce-98e5-65b7-3df4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "entryLinks": [{"name": "Weapon Upgrades", "id": "5d65-13be-a20c-11e1", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-              },
-              {
-                "name": "Smite",
-                "id": "f765-b066-a29a-b450",
-                "hidden": false,
-                "import": true,
-                "targetId": "4aaa-f353-5fa5-fd92",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "4254-91be-538f-0370", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "8949-2cb5-a415-51ff", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "entryLinks": [{"name": "Weapon Upgrades", "id": "fc57-44fd-bdfa-cf65", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Weapon",
-                "id": "1bd0-9497-8d49-551",
-                "defaultSelectionEntryId": "28c2-c07f-ed3a-e98e",
-                "hidden": false,
-                "constraints": [
-                  {"id": "9ee2-8d00-3291-fafb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "1639-fd72-dfaa-a26e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Combi-weapon",
-                    "id": "7d2c-e297-458a-d183",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "2c13-8cdd-f66b-bcae",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "6bcd-b8a4-5374-0852", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  },
-                  {
-                    "name": "Boltgun",
-                    "id": "8507-d65a-ad3-a9f2",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "beac-9df8-7247-c8ab",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "9f91-4bb5-caa4-0068", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  },
-                  {
-                    "name": "Storm bolter",
-                    "id": "b237-a317-4658-c062",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "eb61-5cd0-5242-74cc",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "40c3-3822-3eb6-0064", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  },
-                  {
-                    "name": "Grav-pistol",
-                    "id": "bb84-cd8a-b25b-9124",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "1f74-a1b-2835-ccdd",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "4a80-d32b-7d26-95f7", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  },
-                  {
-                    "name": "Hand flamer",
-                    "id": "6685-ac18-c7b7-795",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "9dc6-6ad8-818e-db2e",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "0a59-8eb1-17a5-2a64", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  },
-                  {
-                    "name": "Inferno Pistol",
-                    "id": "428d-4a41-9435-8b1",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "d8bf-e17f-d6fa-b7e8",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "fb1d-c511-8bf5-81da", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  },
-                  {
-                    "name": "Bolt pistol",
-                    "id": "28c2-c07f-ed3a-e98e",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "18b0-8c2-173f-5",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "25f5-8f4d-6c8b-2cbd", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  },
-                  {
-                    "name": "Plasma pistol",
-                    "id": "ed97-8de4-b44b-614a",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "25c2-104f-fa0c-809e",
-                    "type": "selectionEntry",
-                    "entryLinks": [{"name": "Weapon Upgrades", "id": "a66a-711d-552f-7c96", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}]
-                  }
                 ]
               }
             ]
