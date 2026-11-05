@@ -2232,7 +2232,7 @@
         "type": "selectionEntry"
       },
       {
-        "name": "Judiciar Xacharus [Legends]",
+        "name": "Judiciar Xacharus",
         "id": "293f-42d1-5fce-3720",
         "exportable": false,
         "hidden": false,
@@ -46295,7 +46295,7 @@
       {
         "name": "Librarian with Jump Pack",
         "id": "45af-a02e-e8e2-49f",
-        "hidden": true,
+        "hidden": false,
         "import": true,
         "type": "model",
         "associations": [
