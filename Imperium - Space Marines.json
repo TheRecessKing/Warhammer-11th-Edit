@@ -3327,13 +3327,14 @@
         "type": "model",
         "associations": [
           {
-            "name": "Leading",
-            "id": "4738-5a73-1b91-a2e3",
+            "name": "Supporting",
+            "id": "a354-fda0-3734-1c38",
             "action": "group",
             "childId": "unit",
             "childName": "unit",
+            "defaultSelectionEntryId": "none",
             "includeChildSelections": true,
-            "label": "Led by",
+            "label": "Supported by",
             "max": 1,
             "min": 0,
             "scope": "force",
@@ -3347,6 +3348,37 @@
                     "field": "selections",
                     "scope": "self",
                     "shared": true,
+                    "sortIndex": 1,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5fe6-20de-df8d-8e92",
+                    "childName": "Infernus Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 6,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7b57-816b-44b2-65ec",
+                    "childName": "Intercessor Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 8,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "e05e-b4e4-6db0-5d42",
+                    "childName": "Sternguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 9,
                     "type": "instanceOf",
                     "value": 1
                   },
@@ -3356,21 +3388,70 @@
                     "field": "selections",
                     "scope": "self",
                     "shared": true,
+                    "sortIndex": 2,
                     "type": "instanceOf",
                     "value": 1
                   },
-                  {"childId": "5fe6-20de-df8d-8e92", "childName": "Infernus Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "7b57-816b-44b2-65ec", "childName": "Intercessor Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
                   {
-                    "childId": "e05e-b4e4-6db0-5d42",
-                    "childName": "Sternguard Veteran Squad",
+                    "childId": "c7d2-a98d-4ad2-c426",
+                    "childName": "Vanguard Veteran Squad",
                     "field": "selections",
                     "scope": "self",
                     "shared": true,
+                    "sortIndex": 11,
                     "type": "instanceOf",
                     "value": 1
                   },
-                  {"childId": "2740-ec68-77ee-2830", "childName": "Tactical Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+                  {
+                    "childId": "9e2c-48af-8c2b-ea68",
+                    "childName": "Crusader Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 3,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "1193-4f69-5b9f-6fbc",
+                    "childName": "Deathwatch Veterans",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 4,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f790-2929-6951-c241",
+                    "childName": "Sword Brethren Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 10,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "e1e2-0be9-8f9f-1e32",
+                    "childName": "Inner Circle Companions",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 7,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "20a9-0897-2b65-89a7",
+                    "childName": "Decimus Kill Team",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 5,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
                 ]
               }
             ]
